@@ -1,0 +1,9 @@
+# Editor dizinleri ve dosyaları
+.vscode/
+
+# İşletim sistemi kalıntıları (Gereksiz gizli dosyalar)
+.DS_Store
+Thumbs.db
+
+# İleride Node.js veya farklı paketler kullanırsak diye şimdiden ekleyelim
+node_modules/
