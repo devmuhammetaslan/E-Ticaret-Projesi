@@ -1,41 +1,39 @@
-📝 E-Ticaret Modülü (Vanilla JS)
-Bu proje, modern web geliştirme prensipleri kullanılarak geliştirilmiş dinamik bir e-ticaret sepeti modülüdür. Kullanıcı deneyimi (UX) ve temiz kod (Clean Code) standartları ön planda tutularak inşa edilmiştir.
+# 🛒 Dinamik E-Ticaret Sepet Modülü (Vanilla JS)
 
-🚀 Canlı Demo: Projeyi Görüntüle
+Bu proje, modern web geliştirme prensipleri kullanılarak sıfırdan geliştirilmiş dinamik bir e-ticaret sepeti modülüdür. Kullanıcı deneyimi (UX) ve temiz kod (Clean Code) standartları ön planda tutularak, durum yönetimi (state management) ve veri kalıcılığı (data persistence) gibi yazılım mimarisi konseptleri uygulanmıştır. Gelecekteki React tabanlı projeler için sağlam bir algoritma altyapısı sunar.
 
-✨ Özellikler
-Dinamik Ürün Listeleme: Ürün verileri JavaScript objeleri üzerinden asenkron bir yapıyla DOM'a basılır.
+## 🔗 Canlı Demo
+[Projeyi İncelemek İçin Tıklayın](https://e-ticaret-projesi-smoky.vercel.app/)
 
-Gelişmiş Sepet Yönetimi: Ürün ekleme, miktar artırma/azaltma ve sepetten tamamen çıkarma işlemleri anlık olarak gerçekleşir.
+## ✨ Öne Çıkan Özellikler
 
-LocalStorage Entegrasyonu: Sayfa yenilense bile sepet verileri kaybolmaz, tarayıcı hafızasında saklanır.
+* **Dinamik DOM Manipülasyonu:** Ürün verileri JavaScript objelerinden okunarak asenkron bir yapıyla ekrana basılır.
+* **Gelişmiş Sepet Algoritması:** Ürün ekleme, adet artırma/azaltma ve sepetten tamamen silme işlemleri anlık hesaplamalarla gerçekleşir.
+* **Veri Kalıcılığı (LocalStorage):** Sayfa yenilense veya kapatılsa dahi sepet içeriği tarayıcı hafızasında güvenle saklanır.
+* **İş Mantığı (Business Logic):** `APP10` kodu ile çalışan, sepet toplamı üzerinden dinamik indirim hesaplayan özel kupon sistemi.
+* **Anlık Kullanıcı Geri Bildirimi:** Kullanıcı eylemlerine yanıt veren (ürün eklendi, hatalı kupon vb.) süreli bildirim (toast notification) yapısı.
 
-Kupon Sistemi: APP10 kodu ile sepet toplamı üzerinden dinamik indirim hesaplayan iş mantığı (business logic).
+## 🛠️ Kullanılan Teknolojiler
 
-Responsive Tasarım: Mobil ve masaüstü cihazlarla tam uyumlu arayüz.
+* **HTML5:** Semantik iskelet
+* **CSS3:** Flexbox ve duyarlı (responsive) UI tasarımı
+* **JavaScript (ES6+):** * Array Metotları (`map`, `filter`, `find`, `forEach`)
+  * Spread Operator (`...`)
+  * Event Listeners ve DOM Caching
+  * LocalStorage API
 
-Anlık Bildirimler: Kullanıcı işlemleri için (ürün eklendi vb.) özel tasarlanmış toast notification sistemi.
+## 🎯 Gelecek Planları (Roadmap)
 
-🛠️ Kullanılan Teknolojiler
-HTML5: Semantik yapı ve içerik iskeleti.
+Bu proje, bir geliştirme serüveninin ilk adımıdır. İlerleyen süreçte aşağıdaki modernizasyonlar uygulanacaktır:
 
-CSS3: Flexbox ve modern UI bileşenleri.
+1. **React.js Mimarisini Entegre Etmek:** Mevcut yapı component'lere (bileşenlere) ayrılarak `useState` ve `useEffect` hook'ları ile yeniden yazılacak.
+2. **REST API Entegrasyonu:** Ürünler statik bir diziden değil, harici bir REST API üzerinden asenkron olarak çekilecek.
+3. **Tailwind CSS:** Arayüz daha hızlı ve ölçeklenebilir bir stil kütüphanesine taşınacak.
 
-JavaScript (ES6+): DOM Manipülasyonu, Array Methods (map, filter, find), Spread Operator ve LocalStorage API.
+## 🚀 Kurulum ve Çalıştırma
 
-🏗️ Mühendislik Yaklaşımı
-Proje geliştirilirken "Global State" mantığı taklit edilerek verilerin tek bir merkezden yönetilmesi sağlanmıştır. Fonksiyonel programlama prensiplerine sadık kalınarak kodun tekrar edilebilirliği ve okunabilirliği artırılmıştır.
+Projeyi kendi bilgisayarınızda denemek için:
 
-🎯 Gelecek Planları (Roadmap)
-Bu proje, geliştirme sürecinin bir parçası olarak aşağıdaki aşamalardan geçecektir:
-
-React Migration: Mevcut yapı React bileşenlerine (Components) dönüştürülecek ve useState/useEffect hook'ları ile state yönetimi modernize edilecek.
-
-API Entegrasyonu: Ürün verileri statik bir dosyadan değil, gerçek bir REST API üzerinden çekilecek.
-
-Tailwind CSS: Stil yönetimi daha ölçeklenebilir bir yapı olan Tailwind CSS'e taşınacak.
-
-Nasıl Kullanılır?
-Repoyu bilgisayarınıza clone'layın: git clone https://github.com/devmuhammetaslan/E-Ticaret-Projesi.git
-
-index.html dosyasını tarayıcınızda açın.
+1. Repoyu bilgisayarınıza klonlayın:
+   ```bash
+   git clone [https://github.com/devmuhammetaslan/E-Ticaret-Projesi.git](https://github.com/devmuhammetaslan/E-Ticaret-Projesi.git)
