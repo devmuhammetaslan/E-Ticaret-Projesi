@@ -32,7 +32,9 @@ function urunleriEkranaBas() {
 }
 urunleriEkranaBas();
 
-let sepet = [];
+let sepet = JSON.parse(localStorage.getItem("sepetKayit")) || [];
+sepetSayac.innerHTML = "Sepet (" + sepet.length + ")";//hemen peşinden html olarak güncelliyorsun sekronziaston için
+sepetiGuncelle();
 function sepeteEkle(urunId){
     const secilenUrun = urunler.find(urun => urun.id === urunId);//3=== olmalı dikkat
     // 2. DEDEKTİFLİK: Bu ürün bizim "sepet" dizimizde zaten var mı?
@@ -80,6 +82,7 @@ function sepetiGuncelle() {
         toplamFiyat += (urun.fiyat * urun.miktar);
         birikenHTML += sepetUrunuHTML; // HTML'i biriktir
         toplamFiyat += urun.fiyat;     // Fiyatı toplama ekle
+        sepetiKaydet();
     });
     if (sepet.length === 0) {
         sepetIcerik.innerHTML = "<p>Sepetiniz şu an boş.</p>";
@@ -114,3 +117,7 @@ sepetSayac.addEventListener("click",event=>{
 sepetKapatBtn.addEventListener("click",event=>{
     sepetCekmece.classList.remove("aktif");
 })
+
+function sepetiKaydet() {
+    localStorage.setItem("sepetKayit",JSON.stringify(sepet));
+}
