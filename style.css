@@ -56,3 +56,21 @@ a{
 .sepet-cekmece.aktif {
     right: 0; 
 }
+.bildirim {
+    position: fixed;
+    bottom: -100px; 
+    right: 20px;  
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: bottom 0.4s ease-out, opacity 0.4s ease-out; 
+    z-index: 2000;
+    font-weight: bold;
+    opacity: 0;     /* Başlangıçta tamamen şeffaf */
+}
+.bildirim.goster {
+    bottom: 20px;
+    opacity: 1;   /* Tamamen görünür (opak) ol */
+}
